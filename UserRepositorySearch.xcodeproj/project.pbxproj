@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08DABA05E4E3AC6FE5BCFAE2 /* Pods_UserRepositorySearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025A7CE2A09E2D74E3FC5451 /* Pods_UserRepositorySearch.framework */; };
 		5C951D55228C791700239527 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C951D54228C791700239527 /* AppDelegate.swift */; };
 		5C951D57228C791700239527 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C951D56228C791700239527 /* ViewController.swift */; };
 		5C951D5A228C791700239527 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C951D58228C791700239527 /* Main.storyboard */; };
 		5C951D5C228C791800239527 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C951D5B228C791800239527 /* Assets.xcassets */; };
 		5C951D5F228C791800239527 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C951D5D228C791800239527 /* LaunchScreen.storyboard */; };
+		5CF6FE5C228C860E0016EB7F /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6FE5B228C860E0016EB7F /* Repository.swift */; };
+		5CF6FE5E228C886E0016EB7F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6FE5D228C886E0016EB7F /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		025A7CE2A09E2D74E3FC5451 /* Pods_UserRepositorySearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UserRepositorySearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C951D51228C791700239527 /* UserRepositorySearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserRepositorySearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C951D54228C791700239527 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C951D56228C791700239527 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		5C951D5B228C791800239527 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C951D5E228C791800239527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C951D60228C791800239527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CF6FE5B228C860E0016EB7F /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		5CF6FE5D228C886E0016EB7F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		8AF8F1E81845F6C8C45038D0 /* Pods-UserRepositorySearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserRepositorySearch.debug.xcconfig"; path = "Target Support Files/Pods-UserRepositorySearch/Pods-UserRepositorySearch.debug.xcconfig"; sourceTree = "<group>"; };
+		8E7EC7D9A7069DC375F2E41D /* Pods-UserRepositorySearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserRepositorySearch.release.xcconfig"; path = "Target Support Files/Pods-UserRepositorySearch/Pods-UserRepositorySearch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08DABA05E4E3AC6FE5BCFAE2 /* Pods_UserRepositorySearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		315E500B0577F92B0AB84090 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				025A7CE2A09E2D74E3FC5451 /* Pods_UserRepositorySearch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5C951D48228C791700239527 = {
 			isa = PBXGroup;
 			children = (
 				5C951D53228C791700239527 /* UserRepositorySearch */,
 				5C951D52228C791700239527 /* Products */,
+				943EC8399987A217AF279910 /* Pods */,
+				315E500B0577F92B0AB84090 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +73,50 @@
 		5C951D53228C791700239527 /* UserRepositorySearch */ = {
 			isa = PBXGroup;
 			children = (
+				5C951D68228C7ADB00239527 /* Main */,
+				5C951D67228C7AB700239527 /* Resources */,
+				5C951D66228C7A7300239527 /* AppDelegate */,
+			);
+			path = UserRepositorySearch;
+			sourceTree = "<group>";
+		};
+		5C951D66228C7A7300239527 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
 				5C951D54228C791700239527 /* AppDelegate.swift */,
-				5C951D56228C791700239527 /* ViewController.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		5C951D67228C7AB700239527 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				5C951D58228C791700239527 /* Main.storyboard */,
 				5C951D5B228C791800239527 /* Assets.xcassets */,
 				5C951D5D228C791800239527 /* LaunchScreen.storyboard */,
 				5C951D60228C791800239527 /* Info.plist */,
 			);
-			path = UserRepositorySearch;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5C951D68228C7ADB00239527 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5C951D56228C791700239527 /* ViewController.swift */,
+				5CF6FE5B228C860E0016EB7F /* Repository.swift */,
+				5CF6FE5D228C886E0016EB7F /* ViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		943EC8399987A217AF279910 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AF8F1E81845F6C8C45038D0 /* Pods-UserRepositorySearch.debug.xcconfig */,
+				8E7EC7D9A7069DC375F2E41D /* Pods-UserRepositorySearch.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C951D63228C791800239527 /* Build configuration list for PBXNativeTarget "UserRepositorySearch" */;
 			buildPhases = (
+				72648DDCF4F756B18BF3686B /* [CP] Check Pods Manifest.lock */,
 				5C951D4D228C791700239527 /* Sources */,
 				5C951D4E228C791700239527 /* Frameworks */,
 				5C951D4F228C791700239527 /* Resources */,
+				C1A9131C993DB821447ECDB9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +187,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		72648DDCF4F756B18BF3686B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UserRepositorySearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1A9131C993DB821447ECDB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UserRepositorySearch/Pods-UserRepositorySearch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UserRepositorySearch/Pods-UserRepositorySearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5C951D4D228C791700239527 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +245,8 @@
 			files = (
 				5C951D57228C791700239527 /* ViewController.swift in Sources */,
 				5C951D55228C791700239527 /* AppDelegate.swift in Sources */,
+				5CF6FE5E228C886E0016EB7F /* ViewModel.swift in Sources */,
+				5CF6FE5C228C860E0016EB7F /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,11 +390,12 @@
 		};
 		5C951D64228C791800239527 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AF8F1E81845F6C8C45038D0 /* Pods-UserRepositorySearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8MTR5SHZFD;
-				INFOPLIST_FILE = UserRepositorySearch/Info.plist;
+				INFOPLIST_FILE = UserRepositorySearch/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +409,12 @@
 		};
 		5C951D65228C791800239527 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E7EC7D9A7069DC375F2E41D /* Pods-UserRepositorySearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8MTR5SHZFD;
-				INFOPLIST_FILE = UserRepositorySearch/Info.plist;
+				INFOPLIST_FILE = UserRepositorySearch/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
