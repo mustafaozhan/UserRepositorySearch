@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Repository {
-    let repoName: String = ""
-    let repoUrl: String = ""
+struct Repository {
+    let repoName: String
+    let repoUrl: String
 }
